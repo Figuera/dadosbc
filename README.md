@@ -20,7 +20,7 @@ dadosbc - Instalação
 install.packages("dadosbc")
 ```
 
-Também é possível instalar a versão a versão de denselvolvimento,
+Também é possível instalar a versão a versão de densenvolvimento,
 utilizando os seguintes comandos:
 
 ```R
@@ -89,13 +89,13 @@ dolar <- obter_dolar(inicio = 2015, fim = 2017, frequencia = "mensal")
 Para mais informações sobre estas funções consulte `help(obter_ipca)`, 
 `help(obter_sm)` e `help(obter_dolar)`. Note também que as datas
 iniciais e finais não precisam estar no formato completo, um ano ("YYYY") ou um
-mes/ano ("mm/YYYY") são o suficiente.
+mês/ano ("mm/YYYY") são o suficiente.
 
  Consulta PIB
 --------------------------------------------------------------------------
 
 Como dito na seção anterior, o PIB também pode ser consultado por função
-específica, mas diferentemente dos exemplos anteriores exitem seis funções
+específica, mas diferentemente dos exemplos anteriores existem seis funções
 diferentes para se consultar seis variantes diferentes do PIB, são elas:
 
 - `obter_pibencad` - Consulta o PIB em formato de número índice.
@@ -121,6 +121,6 @@ Problemas ou pedidos
 --------------------------------------------------------------------------
 
 Este é um pacote em desenvolvimento, caso seja encontrado algum problema em seu
-funcionamento, ou ainda, caso houver sugestões de como melhorá-lo, não existe 
+funcionamento, ou ainda, caso houver sugestões de como melhorá-lo, não hesite 
 em abrir um novo [*Issue*](https://github.com/Figuera/dadosbc/issues) ou um novo
 [*Pull Request*](https://github.com/Figuera/dadosbc/pulls).
