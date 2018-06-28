@@ -1,0 +1,13 @@
+Package: dadosbc
+Type: Package
+Imports: xml2, curl, zoo, readxl, methods
+Suggests: testthat, knitr, tidyverse
+Title: Obtenção de dados brasileiros
+Version: 0.1.0
+Authors@R: person("Caio", "Figueiredo", email="caio.figueiredo@fazenda.gov.br", role=c("aut", "cre"))
+Description: Pacote visa disponibilizar acesso facilitado a importantes fontes de dados brasileiros.
+License: GPL
+Language: pt_BR
+Encoding: UTF-8
+RoxygenNote: 6.0.1
+VignetteBuilder: knitr
