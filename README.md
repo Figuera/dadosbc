@@ -116,3 +116,11 @@ pibpercapita <- obter_pib(inicio = 2010, tipo = "percapita") #O mesmo que obter_
 
 A lista completa de tipos é: "encad", "mensal", "mensalacum", "corrente",
 "mensalacum" e "percapita".
+
+Problemas ou pedidos
+--------------------------------------------------------------------------
+
+Este é um pacote em desenvolvimento, caso seja encontrado algum problema em seu
+funcionamento, ou ainda, caso houver sugestões de como melhorá-lo, não existe 
+em abrir um novo [*Issue*](https://github.com/Figuera/dadosbc/issues) ou um novo
+[*Pull Request*](https://github.com/Figuera/dadosbc/pulls).
