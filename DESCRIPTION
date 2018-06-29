@@ -1,7 +1,7 @@
 Package: dadosbc
 Type: Package
 Imports: xml2, curl, zoo, readxl, methods
-Suggests: testthat, knitr, tidyverse
+Suggests: knitr, ggplot2, tidyverse
 Title: Obtenção de dados brasileiros
 Version: 0.1.0
 Authors@R: person("Caio", "Figueiredo", email="caio.figueiredo@fazenda.gov.br", role=c("aut", "cre"))

@@ -60,8 +60,11 @@ ts.plot(emprego)
 Ou utilizando o popular pacote de criação de imagens, o ggplot2:
 
 ```{r}
-library(ggplot2)
-autoplot(emprego)
+if(require(ggplot2)) {
+  ggplot2::autoplot(emprego)
+} else {
+  print("Para ver esse exemplo é necessário ter o pacote ggplot2 instalado.")
+}
 ```
 
 # Consultas rápidas
