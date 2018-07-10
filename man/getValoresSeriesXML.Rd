@@ -22,7 +22,10 @@ getValoresSeriesXML do web service do Banco Central. Para resultados mais
 compreensíveis utilize a função \code{obter_bc}.
 }
 \examples{
-\dontrun{dolar <- getValoresSeriesXML(1)}
+# Obtém toda a série de tempo de câmbio, a partir de 1995, em formato XML
+dolar <- getValoresSeriesXML(1) 
+# Obter a série de tempo de câmbio, a partir de 1995, em formato XML
+dolar <- getValoresSeriesXML(1, inicio="01/01/1995", fim = "31/01/1995")
 }
 \seealso{
 \code{\link{obter_bcws}}

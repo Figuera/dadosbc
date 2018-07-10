@@ -13,6 +13,13 @@
 #' \code{\link{getValoresSeriesXML}}
 #' @importFrom stats time
 #' @export
+#' @examples
+#' # Obter série de ipca, em número índice, a partir de 01/01/1995
+#' dolar <- obter_ipca()
+#' # Obter série de ipca, em variação percentual, a partir de 01/01/1995
+#' dolar <- obter_ipca(tipo = "var")
+#' # Obter série anual de ipca entre 2010 e 2017
+#' dolar <- obter_ipca(inicio = 2010, fim = 2017, frequencia = "anual")
 obter_ipca <- function(inicio="01/01/1995",
                       fim = Sys.Date(),
                       tipo=c("indice", "var"), 

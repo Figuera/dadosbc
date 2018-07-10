@@ -11,7 +11,7 @@
 #' \code{\link{obter_bc}}
 #' @export
 #' @examples
-#' \dontrun{dolar <- getUltimoValorXML(1)}
+#' dolar <- getUltimoValorXML(1) # Obtém último valor da série de câmbio
 getUltimoValorXML <- function(serie) {
   obter_bcws("getUltimoValorXML", serie)
 }

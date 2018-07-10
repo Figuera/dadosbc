@@ -10,6 +10,19 @@
 #' \code{\link{obter_bcws}}
 #' \code{\link{getValoresSeriesXML}}
 #' @export
+#' @examples
+#' # Obter série de pib, em valores encadeados, a partir de 01/01/1995
+#' pib <- obter_pib()
+#' # Obter série de pib, em valores mensais, a partir de 2017 
+#' pib <- obter_pib(inicio = 2017, tipo = "mensal")
+#' # Obter série de pib, em valores encadeados e dessazonalizados
+#' pib <- obter_pib(tipo = "encaddess")
+#' # Obter série de pib, em valores mensais acumulados em 12 meses, a partir de 2017 
+#' pib <- obter_pib(inicio = 2017, tipo = "encaddess")
+#' # Obter série de pib, em valores correntes
+#' pib <- obter_pib(tipo = "corrente")
+#' # Obter série de pib, em valores percapita
+#' pib <- obter_pib(tipo = "percapita")
 obter_pib <- function(inicio="01/01/1995",
                       fim=Sys.Date(),
                       tipo=c("encad","encaddess","mensal","mensalacum",
@@ -50,6 +63,9 @@ obter_pib <- function(inicio="01/01/1995",
 #' @seealso
 #' \code{\link{obter_pib}}
 #' @export
+#' @examples
+#' # Obter série de pib, em valores correntes, entre 2010 e 2014
+#' pib <- obter_pibcorrente(inicio = 2010, fim = 2014)
 obter_pibcorrente <- function(inicio = "01/01/1995",
                             fim    = Sys.Date()) {
   obter_pib(inicio, fim, "corrente")
@@ -66,6 +82,9 @@ obter_pibcorrente <- function(inicio = "01/01/1995",
 #' @seealso
 #' \code{\link{obter_pib}}
 #' @export
+#' @examples
+#' # Obter série de pib, em valores mensais, entre 2010 e 2014
+#' pib <- obter_pibmensal(inicio = 2010, fim = 2014)
 obter_pibmensal <- function(inicio = "01/01/1995",
                             fim    = Sys.Date()) {
   obter_pib(inicio, fim, "mensal")
@@ -82,6 +101,9 @@ obter_pibmensal <- function(inicio = "01/01/1995",
 #' @seealso
 #' \code{\link{obter_pib}}
 #' @export
+#' @examples
+#' # Obter série de pib, em valores mensais e acumulados em 12 meses, entre 2010 e 2014
+#' pib <- obter_pibmensalacum(inicio = 2010, fim = 2014)
 obter_pibmensalacum <- function(inicio = "01/01/1995",
                             fim    = Sys.Date()) {
   obter_pib(inicio, fim, "mensalacum")
@@ -98,6 +120,9 @@ obter_pibmensalacum <- function(inicio = "01/01/1995",
 #' @seealso
 #' \code{\link{obter_pib}}
 #' @export
+#' @examples
+#' # Obter série de pib, em valores encadeados, entre 2010 e 2014
+#' pib <- obter_pibencad(inicio = 2010, fim = 2014)
 obter_pibencad <- function(inicio = "01/01/1995",
                             fim    = Sys.Date()) {
   obter_pib(inicio, fim, "encad")
@@ -114,6 +139,9 @@ obter_pibencad <- function(inicio = "01/01/1995",
 #' @seealso
 #' \code{\link{obter_pib}}
 #' @export
+#' @examples
+#' # Obter série de pib, em valores encadeados e dessazonalizados, entre 2010 e 2014
+#' pib <- obter_pibencad(inicio = 2010, fim = 2014)
 obter_pibencaddess <- function(inicio = "01/01/1995",
                             fim    = Sys.Date()) {
   obter_pib(inicio, fim, "encaddess")
@@ -130,6 +158,9 @@ obter_pibencaddess <- function(inicio = "01/01/1995",
 #' @seealso
 #' \code{\link{obter_pib}}
 #' @export
+#' @examples
+#' # Obter série de pib, em valores per capita, entre 2010 e 2014
+#' pib <- obter_pibpercapita(inicio = 2010, fim = 2014)
 obter_pibpercapita <- function(inicio = "01/01/1995",
                             fim    = Sys.Date()) {
   obter_pib(inicio, fim, "percapita")

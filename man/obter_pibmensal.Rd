@@ -18,6 +18,10 @@ Série de tempo do PIB mensal
 Função é um cápsula em torno de \code{obter_pib}, que consulta a série de
 PIB mensal gerado pelo BC.
 }
+\examples{
+# Obter série de pib, em valores mensais, entre 2010 e 2014
+pib <- obter_pibmensal(inicio = 2010, fim = 2014)
+}
 \seealso{
 \code{\link{obter_pib}}
 }

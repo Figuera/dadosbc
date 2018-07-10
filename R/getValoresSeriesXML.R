@@ -13,7 +13,10 @@
 #' \code{\link{obter_bc}}
 #' @export
 #' @examples
-#' \dontrun{dolar <- getValoresSeriesXML(1)}
+#' # Obtém toda a série de tempo de câmbio, a partir de 1995, em formato XML
+#' dolar <- getValoresSeriesXML(1) 
+#' # Obter a série de tempo de câmbio, a partir de 1995, em formato XML
+#' dolar <- getValoresSeriesXML(1, inicio="01/01/1995", fim = "31/01/1995")
 getValoresSeriesXML <- function(serie,
                                 inicio="01/01/1995",
                                 fim=Sys.Date()) {

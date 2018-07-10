@@ -19,7 +19,7 @@ Função obtém valor da série de tempo no período requisitado, utilizando mé
 getValor do web service do Banco Central.
 }
 \examples{
-\dontrun{dolar <- getValor(1, "01/03/2012")}
+dolar <- getValor(1, "01/03/2012") #Obtém o valor de câmbio vigente em 01/03/2012
 }
 \seealso{
 \code{\link{obter_bcws}}

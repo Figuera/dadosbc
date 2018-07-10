@@ -23,9 +23,6 @@ texto XML com resposta a consulta
 Função que se encarrega de fazer a comunicação com o Web Service do Banco
 Central
 }
-\examples{
-\dontrun{serie <- obter_bcws("getValoresSeriesXML", 1, "01/01/2015", "31/01/2015")}
-}
 \seealso{
 \code{\link{obter_bc}}
 \code{\link{getValoresSeriesXML}}

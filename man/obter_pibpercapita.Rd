@@ -18,6 +18,10 @@ Série de tempo do PIB per capita
 Função é um cápsula em torno de \code{obter_pib}, que consulta a série de
 PIB per capita.
 }
+\examples{
+# Obter série de pib, em valores per capita, entre 2010 e 2014
+pib <- obter_pibpercapita(inicio = 2010, fim = 2014)
+}
 \seealso{
 \code{\link{obter_pib}}
 }

@@ -20,6 +20,20 @@ Série de tempo desejada.
 \description{
 Função consulta as séries de tempo do PIB no web service do BC
 }
+\examples{
+# Obter série de pib, em valores encadeados, a partir de 01/01/1995
+pib <- obter_pib()
+# Obter série de pib, em valores mensais, a partir de 2017 
+pib <- obter_pib(inicio = 2017, tipo = "mensal")
+# Obter série de pib, em valores encadeados e dessazonalizados
+pib <- obter_pib(tipo = "encaddess")
+# Obter série de pib, em valores mensais acumulados em 12 meses, a partir de 2017 
+pib <- obter_pib(inicio = 2017, tipo = "encaddess")
+# Obter série de pib, em valores correntes
+pib <- obter_pib(tipo = "corrente")
+# Obter série de pib, em valores percapita
+pib <- obter_pib(tipo = "percapita")
+}
 \seealso{
 \code{\link{obter_bcws}}
 \code{\link{getValoresSeriesXML}}

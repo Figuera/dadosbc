@@ -22,6 +22,14 @@ Série de tempo das taxas de câmbio
 \description{
 Função consulta a série de taxas de câmbio no web service do BC.
 }
+\examples{
+# Obter série de câmbio a partir de 01/01/1995
+dolar <- obter_dolar()
+# Obter série de venda de dolár a partir de 01/01/1995
+dolar <- obter_dolar(tipo = "venda")
+# Obter série mensal de câmbio durante o ano de 2010
+dolar <- obter_dolar(inicio = 2010, fim = 2010, frequencia = "mensal")
+}
 \seealso{
 \code{\link{obter_bcws}}
 \code{\link{getValoresSeriesXML}}

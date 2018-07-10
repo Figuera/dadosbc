@@ -13,6 +13,13 @@
 #' \code{\link{getValoresSeriesXML}}
 #' @importFrom stats time
 #' @export
+#' @examples
+#' # Obter série de salário mínimo a partir de 01/01/1995
+#' sm <- obter_sm()
+#' # Obter série de salário mínimo em valores resais a partir de 01/01/1995
+#' sm <- obter_sm(unidade = "real")
+#' # Obter série anual de salario mínimo  entre 2010 e 2014
+#' sm <- obter_sm(inicio = 2010, fim = 2014, frequencia = "anual")
 obter_sm <- function(inicio="01/01/1995",
                      fim=Sys.Date(),
                      unidade=c("nominal", "real"),

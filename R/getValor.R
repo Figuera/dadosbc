@@ -11,7 +11,7 @@
 #' \code{\link{obter_bc}}
 #' @export
 #' @examples
-#' \dontrun{dolar <- getValor(1, "01/03/2012")}
+#' dolar <- getValor(1, "01/03/2012") #Obtém o valor de câmbio vigente em 01/03/2012
 getValor <- function(serie,
                          inicio="01/01/1995"){
   obter_bcws("getValor", serie, inicio)

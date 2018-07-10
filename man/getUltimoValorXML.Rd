@@ -18,7 +18,7 @@ getUltimoValorXML do web service do Banco Central. Para resultados mais
 compreensíveis utilize a função \code{obter_bc}.
 }
 \examples{
-\dontrun{dolar <- getUltimoValorXML(1)}
+dolar <- getUltimoValorXML(1) # Obtém último valor da série de câmbio
 }
 \seealso{
 \code{\link{obter_bcws}}

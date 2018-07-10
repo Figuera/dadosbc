@@ -15,8 +15,6 @@
 #' \code{\link{getValor}}
 #' \code{\link{getValorEspecial}}
 #' @keywords internal
-#' @examples
-#' \dontrun{serie <- obter_bcws("getValoresSeriesXML", 1, "01/01/2015", "31/01/2015")}
 obter_bcws <- function(
                metodo=c("getValoresSeriesXML", "getUltimoValorXML", "getValor", "getValorEspecial"),
                serie,

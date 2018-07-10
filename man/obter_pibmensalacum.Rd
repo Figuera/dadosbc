@@ -18,6 +18,10 @@ Série de tempo do PIB mensal acumulado em 12 meses
 Função é um cápsula em torno de \code{obter_pib}, que consulta a série de
 PIB mensal acumulado em 12 meses.
 }
+\examples{
+# Obter série de pib, em valores mensais e acumulados em 12 meses, entre 2010 e 2014
+pib <- obter_pibmensalacum(inicio = 2010, fim = 2014)
+}
 \seealso{
 \code{\link{obter_pib}}
 }

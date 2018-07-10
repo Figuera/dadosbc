@@ -18,6 +18,10 @@ Série de tempo do PIB encadeado dessazonalizado
 Função é um cápsula em torno de \code{obter_pib}, que consulta a série de
 PIB encadeado dessazonalizado.
 }
+\examples{
+# Obter série de pib, em valores encadeados e dessazonalizados, entre 2010 e 2014
+pib <- obter_pibencad(inicio = 2010, fim = 2014)
+}
 \seealso{
 \code{\link{obter_pib}}
 }

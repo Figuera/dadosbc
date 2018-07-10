@@ -24,6 +24,14 @@ Série de tempo de salário mínimo
 \description{
 Função consulta a série de tempo se salário mínimo no web service do BC.
 }
+\examples{
+# Obter série de salário mínimo a partir de 01/01/1995
+sm <- obter_sm()
+# Obter série de salário mínimo em valores resais a partir de 01/01/1995
+sm <- obter_sm(unidade = "real")
+# Obter série anual de salario mínimo  entre 2010 e 2014
+sm <- obter_sm(inicio = 2010, fim = 2014, frequencia = "anual")
+}
 \seealso{
 \code{\link{obter_bcws}}
 \code{\link{getValoresSeriesXML}}
